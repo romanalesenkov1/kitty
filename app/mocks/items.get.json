@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Bella",
+    "thumbnailUrl": "images/pet_hot_bases7.jpg",
+    "price" : 1000,
+    "year": 2015,
+    "weight" : 5.3
+  },
+  {
+    "id": 2,
+    "title": "Tigger",
+    "thumbnailUrl": "images/pet_hot_bases9.jpg",
+    "price" : 2000,
+    "year": 2008,
+    "weight" : 8.1
+  },
+  {
+    "id": 3,
+    "title": "Chloe",
+    "thumbnailUrl": "images/up-004.jpg",
+    "price" : 5000,
+    "year": 2013,
+    "weight" : 4.2
+  },
+  {
+    "id": 4,
+    "title": "Shadow",
+    "thumbnailUrl": "images/up-006.jpg",
+    "price" : 4500,
+    "year": 2016,
+    "weight" : 1.1
+  },
+  {
+    "id": 5,
+    "title": "Oliver",
+    "thumbnailUrl": "images/up-043.jpg",
+    "price" : 3200,
+    "year": 2012,
+    "weight" : 5.8
+  },
+  {
+    "id": 6,
+    "title": "Lucy",
+    "thumbnailUrl": "images/vid_di_2.gif",
+    "price" : 2700,
+    "year": 2013,
+    "weight" : 3.7
+  }
+]
+

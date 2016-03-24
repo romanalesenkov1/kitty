@@ -1,0 +1,47 @@
+<input type="search"
+       ng-model="itemsList.searchCriteria"
+       placeholder="Search for a kitty by name">
+
+<br>
+
+Order By:
+<div class="order">
+  <div ng-repeat="typeItem in itemsList.TYPE_LIST track by typeItem.value">
+    <button ng-click="itemsList.orderBy(typeItem.value)">
+      {{typeItem.title}}
+    </button>
+    <span class="sortorder" ng-show="itemsList.type === typeItem.value" ng-class="{reverse:itemsList.reverse}">
+      <span class="caret" ng-class="{up: itemsList.reverse, down: !itemsList.reverse}"></span>
+    </span>
+  </div>
+</div>
+
+<br>
+
+<div class="caption">
+  <div>Name</div>
+  <div>Price</div>
+  <div>Birth year</div>
+  <div>Weight</div>
+</div>
+<div class="items-list">
+  <div class="item"
+       ng-repeat="item in itemsList.items | propertiesFilter: itemsList.searchCriteria:['title'] | orderBy:itemsList.type:itemsList.reverse track by item.id"
+       ng-if="itemsList.items.length">
+    <a href="/?offline=true#/items/{{item.id}}">
+      <img ng-src="{{item.thumbnailUrl}}">
+    </a>
+    <div class="info">
+      <div class="title">
+        <a href="/?offline=true#/items/{{item.id}}">
+        <span ng-bind-html="item.title | highlight:itemsList.searchCriteria">
+          {{item.title}}
+        </span>
+        </a>
+      </div>
+      <div class="price">{{item.price}}$</div>
+      <div class="year">{{item.year}}</div>
+      <div class="year">{{item.weight}} kg</div>
+    </div>
+  </div>
+</div>
