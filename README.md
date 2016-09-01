@@ -10,4 +10,4 @@ Running `grunt test` will run the unit tests with karma.
 
 ## Preview
 
-googledrive.com/host/0B8I9AATI1-jzXzNWSFlYaWNTeTg/#/
+https://googledrive.com/host/0B8I9AATI1-jzXzNWSFlYaWNTeTg/#/
